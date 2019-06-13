@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>河北省总工会北戴河工人疗养院</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="header gWidth">
+    	<div class="nav"> 		
+    		<h3>河北省总工会北戴河工人疗养院欢迎您！</h3>
+    		<ul class="fr">
+    			<li>您好，137****7472</li>
+    			<li><a href="">退出</a></li>
+    		</ul>
+    	</div>
+        <div class="hb">
+        	<div class="logo clearfix">
+                <img src="images/logo.png" alt="">
+                <ul class="fl">
+                    <li>河北省总工会北戴河工人疗养院</li>
+                    <li style="font-size:16px;">Beidaihe Workers'Sanatorium of Hebei Federation of Trade Unions</li>      
+                </ul>
+                <p class="fr">联系电话：0335-8881234</p>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">疗养院介绍</a></li>
+                    <li><a href="">客房会议</a></li>
+                    <li><a href="">餐饮中心</a></li>
+                    <li><a href="">劳模与职工风采</a></li>
+                    <li><a href="">新闻动态</a></li>
+                    <li style="margin-right:48px;"><a href="">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="gWidth">
+        <div class="content_1 fl">
+            <img src="images/touxiang.png" alt="">
+            <ul>
+                <li>137****7472</li>
+                <li>修改个人资料</li>
+                <li>会员卡绑定</li>
+            </ul>
+            <ol>
+                <li class="one" style="padding-left:0;"><img src="images/geren.png" alt=""><a href="">个人中心</a></li>
+                <li><a href="">个人资料</a></li>
+                <li><a href="">修改密码</a></li>
+                <li class="one" style="padding-left:0;"><img src="images/dingdan.png" alt=""><a href="">我的订单</a></li>
+                <li><a href="css/">订单管理</a></li>
+            </ol>
+        </div>
+        <div class="content_2 fl ">
+            <h3>我的订单</h3>
+            <ul class="nav_ul">
+                <li class="act">全部订单</li><li class=" show">未付款</li>
+            </ul>
+            <div class="div_box">
+                <div class="parent ">
+                    1
+                </div>
+                <div class="parent active">
+                    <h4>订单号：821538263582</h4>
+                    <img src="images/chuang.png" alt="" class="fl">
+                    <ul class="fl">
+                        <li>高档标间高档标间高档标间</li>
+                        <li>入住日期：2019-05-01&nbsp;&nbsp;&nbsp;&nbsp;退房日期：2019-05-05</li>
+                        <li>入住人：凌微愁</li>
+                        <li class="fl">订单金额：<span>￥888</span></li>
+                    </ul>
+                    <p class="fr">订单状态：未付款</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-1.7.min.js"></script>
+<script>
+    $(function(){
+       $('.nav_ul li').click(function(){
+        $(this).addClass('show').siblings().removeClass('show');
+        var _index = $(this).index();+
+        $('.div_box div').addClass('active').eq(_index).siblings().removeClass('active')
+       })
+    })
+</script>
+</html>
